@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <p>Este algoritmo irá fazer a a conversão de Kilos para gramas</p>
+    <h3>Insira o seu peso em KG</h3>
+    <input type="number" id="kilo1">
+    <button onclick="kilo()">Fazer Conversão</button>
+    <p id="resultado"></p>
+    <script>
+        function kilo(){
+            let valor1 = parseInt(document.getElementById("kilo1").value);
+
+            let resultado = valor1 / 1000
+            document.getElementById("resultado").innerHTML=resultado
+        }
+    </script>
+</body>
+</html>

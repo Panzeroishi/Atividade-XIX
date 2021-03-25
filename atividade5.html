@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+<body>
+<!-- 5. Faça um programa que receba três inteiros e diga qual deles é o maior e qual o menor. Consegue criar mais de uma solução?
+ -->
+<h3>Este Algoritmo irá ler 3 valores inteiros e dizer qual é menor e qual é o maior</h3>
+
+<input type="number" id="numero1">
+<br>
+<input type="number" id="numero2">
+<br>
+<input type="number" id="numero3">
+<br>
+<button onclick="fazer()">Começar</button>
+<br>
+<p id="resultado"></p>
+
+<script>
+    function fazer(){
+        let valor1 = parseInt(document.getElementById("numero1").value);
+        let valor2 = parseInt(document.getElementById("numero2").value);
+        let valor3 = parseInt(document.getElementById("numero3").value);
+
+        let resultado = Math.max(valor1,valor2,valor3)
+        document.getElementById("resultado").innerHTML=resultado
+    }
+</script>
+</body>
+</html>

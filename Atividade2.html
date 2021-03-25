@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <p>Este é um algoritmo para fazer a divisão de dois valores mas atenção o segundo valor não pode ser um numero menor ou igual a 0 !</p>
+    
+    <h3>Insira o Primeiro Valor</h3>
+
+    <input type="number" id="primeiro">
+
+    <h3>Insira o Segundo Valor </h3>
+
+    <input type="number" id="segundo">
+    <br><br>
+    <button onclick="fazer()">Fazer Divisão de Valores</button>
+    <h3>Resultado</h3>
+    <p id="resultado"></p>
+    
+    <script>
+        function fazer(){
+            let numero1 =parseInt(document.getElementById("primeiro").value);
+
+            let numero2 = parseInt(document.getElementById("segundo").value);
+
+            let resultado = numero1 / numero2
+            document.getElementById("resultado").innerHTML=resultado
+            
+            if(numero2<=0){
+                document.getElementById("resultado").innerHTML="Erro Valor Não Pode Ser 0,SABE LER NÃO?!"
+            }
+        }
+    </script>
+</body>
+</html>
